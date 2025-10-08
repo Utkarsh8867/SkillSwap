@@ -22,6 +22,7 @@
     "framer-motion": "^10.16.16",
     "jwt-decode": "^4.0.0",
     "next": "14.2.32",
+     "critters": "^0.0.22",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-dropzone": "^14.2.3",
