@@ -32,3 +32,11 @@ export {
     getMyProfile,
     refreshToken
 } from './authService';
+
+export {
+    getConversations,
+    getMessages,
+    sendMessage,
+    createConversation,
+    contactForExchange
+} from './messageService';

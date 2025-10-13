@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
-import { FaEye, FaEyeSlash, FaGoogle, FaGithub, FaEnvelope, FaLock } from 'react-icons/fa';
+import { FaEye, FaEyeSlash, FaEnvelope, FaLock } from 'react-icons/fa';
 
 export const LoginForm = () => {
   const { register, handleSubmit, formState: { errors }, watch } = useForm();
@@ -28,22 +28,7 @@ export const LoginForm = () => {
     }
   };
 
-  const demoAccounts = [
-    { email: 'john@skillswap.com', role: 'Web Developer' },
-    { email: 'sarah@skillswap.com', role: 'UI/UX Designer' },
-    { email: 'mike@skillswap.com', role: 'Python Developer' }
-  ];
 
-  const handleDemoLogin = async (email) => {
-    setLoading(true);
-    try {
-      await login({ email, password: 'demo123' });
-    } catch (error) {
-      console.error('Demo login failed:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <motion.div
@@ -176,7 +161,7 @@ export const LoginForm = () => {
           </div>
           <Link
             href="/forgot-password"
-            className="text-sm text-primary-600 hover:text-primary-500 dark:text-primary-400"
+            className="text-sm text-blue-600 hover:text-blue-500 dark:text-blue-400"
           >
             Forgot password?
           </Link>
@@ -205,60 +190,20 @@ export const LoginForm = () => {
         </motion.div>
       </form>
 
-      {/* Demo Accounts */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.7 }}
-        className="mt-8"
-      >
-        <div className="relative">
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-gray-300 dark:border-gray-600" />
-          </div>
-          <div className="relative flex justify-center text-sm">
-            <span className="px-2 bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400">
-              Or try with demo accounts
-            </span>
-          </div>
-        </div>
 
-        <div className="mt-4 space-y-2">
-          {demoAccounts.map((account, index) => (
-            <motion.button
-              key={account.email}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.8 + index * 0.1 }}
-              onClick={() => handleDemoLogin(account.email)}
-              disabled={loading}
-              className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors disabled:opacity-50"
-            >
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                  {account.role}
-                </span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">
-                  {account.email}
-                </span>
-              </div>
-            </motion.button>
-          ))}
-        </div>
-      </motion.div>
 
       {/* Sign up link */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.9 }}
+        transition={{ delay: 0.7 }}
         className="mt-6 text-center"
       >
         <p className="text-sm text-gray-600 dark:text-gray-400">
           Don't have an account?{' '}
           <Link
             href="/register"
-            className="font-medium text-primary-600 hover:text-primary-500 dark:text-primary-400"
+            className="font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400"
           >
             Sign up here
           </Link>

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaPaperPlane } from 'react-icons/fa';
-import { contactForExchange } from '@/services';
+import { contactForExchange } from '@/services/postService';
 import toast from 'react-hot-toast';
 
 export const ContactModal = ({ isOpen, onClose, post, user }) => {

@@ -21,6 +21,12 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'SkillSwap - Exchange Skills, Build Together',
   description: 'A platform to connect with talented individuals, offer your skills, and get the help you need.',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/favicon.ico',
+    apple: '/icon.svg',
+  },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({ children }) {

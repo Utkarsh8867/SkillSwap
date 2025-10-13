@@ -29,3 +29,10 @@ export const deleteMessage = (messageId) => {
 export const searchMessages = (query) => {
     return api.get('/messages/search', { params: { q: query } });
 };
+
+export const contactForExchange = (postId, message) => {
+    return api.post('/messages/contact-for-exchange', {
+        postId,
+        message
+    });
+};

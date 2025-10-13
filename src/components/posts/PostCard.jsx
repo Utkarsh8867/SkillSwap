@@ -3,7 +3,7 @@
 import { useState, memo, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/context/AuthContext';
 import { ImageGallery } from '@/components/ui/ImageGallery';
 import { ContactModal } from './ContactModal';
 import { FaHeart, FaComment, FaShare, FaBookmark, FaStar, FaEdit, FaTrash, FaEnvelope } from 'react-icons/fa';

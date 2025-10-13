@@ -1,0 +1,21 @@
+{
+  "name": "SkillSwap - Exchange Skills, Build Together",
+  "short_name": "SkillSwap",
+  "description": "A platform to connect with talented individuals, offer your skills, and get the help you need.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}

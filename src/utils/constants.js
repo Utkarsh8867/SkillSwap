@@ -24,11 +24,5 @@ export const POST_TYPES = [
 
 export const LOCATIONS = ['Remote', 'Local', 'Hybrid'];
 
-export const DEMO_USERS = {
-  JOHN: { email: 'john@skillswap.com', password: 'demo123' },
-  SARAH: { email: 'sarah@skillswap.com', password: 'demo123' },
-  MIKE: { email: 'mike@skillswap.com', password: 'demo123' }
-};
-
 export const MAX_IMAGE_UPLOAD = 5;
 export const MAX_IMAGE_SIZE_MB = 5;

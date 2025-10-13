@@ -69,7 +69,7 @@ export const Pagination = ({
                                 <span className="px-3 py-2 text-gray-500">...</span>
                             ) : (
                                 <Button
-                                    variant={page === currentPage ? 'default' : 'outline'}
+                                    variant={page === currentPage ? 'primary' : 'outline'}
                                     size="sm"
                                     onClick={() => onPageChange(page)}
                                     className="min-w-[40px]"
