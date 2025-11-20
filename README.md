@@ -73,7 +73,7 @@ You need to have Node.js (version 18.x or later) and npm installed on your machi
     npm run dev
     ```
 5.  **Open your browser:**
-    Navigate to [http://localhost:3000](http://localhost:3000) to see the application in action.
+    Navigate to [https://skills1wap.netlify.app](https://skills1wap.netlify.app) to see the application in action.
 
 ---
 
